@@ -1,0 +1,13 @@
+.button {
+  font-weight: 500;
+  padding: 5px;
+}
+
+.button:hover {
+  color: blueviolet;
+}
+
+.arrow {
+  height: 16px;
+  width: 16px;
+}
