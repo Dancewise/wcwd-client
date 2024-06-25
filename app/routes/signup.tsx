@@ -14,8 +14,6 @@ export const action = async ({ request }: ActionFunctionArgs) => {
     },
   };
 
-  console.log("data", data);
-
   const response = await fetch("http://127.0.0.1:3000/api/v1/users/signup", {
     method: "POST",
     headers: {
@@ -59,10 +57,7 @@ export default function Index() {
             <input name="password" type="password" required />
           </div>
           <div className="p-2">
-            <label htmlFor="password-confirmation">
-              {" "}
-              password-confirmation{" "}
-            </label>
+            <label htmlFor="password-confirmation">confirm password</label>
             <input name="password-confirmation" type="password" required />
           </div>
           <button type="submit">Create</button>
